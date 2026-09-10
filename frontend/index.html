@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Document Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Document Assistant</h1>
+
+        <p class="subtitle">
+            Upload a PDF and ask questions about it.
+        </p>
+
+
+        <div class="upload-box">
+
+            <h2>Upload Document</h2>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".pdf"
+            >
+
+            <button id="uploadButton">
+                Upload PDF
+            </button>
+
+            <p id="uploadStatus"></p>
+
+        </div>
+
+
+        <div class="question-box">
+
+            <h2>Ask a Question</h2>
+
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Ask something about your document..."
+            >
+
+            <button id="askButton">
+                Ask
+            </button>
+
+        </div>
+
+
+        <div class="answer-box">
+
+            <h2>Conversation</h2>
+
+            <div id="conversation">
+                No questions yet.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
